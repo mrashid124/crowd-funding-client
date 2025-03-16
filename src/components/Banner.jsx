@@ -27,7 +27,7 @@ const Banner = () => {
         {/* Slide 1 */}
         <div
           className="relative w-full h-[60vh] sm:h-[80vh] lg:h-[100vh] bg-cover bg-center"
-          style={{ backgroundImage: "url(/src/assets/NeedyHand.jpg)" }}
+          style={{ backgroundImage: "url(https://i.ibb.co/wrpfwRYC/Needy-Hand.jpg)" }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="flex justify-center items-center h-full text-white px-6" data-aos="fade-up">
@@ -45,7 +45,8 @@ const Banner = () => {
         {/* Slide 2 */}
         <div
           className="relative w-full h-[60vh] sm:h-[80vh] lg:h-[100vh] bg-cover bg-center"
-          style={{ backgroundImage: "url(/src/assets/Rohinga.jpg)" }}
+          style={{ backgroundImage: "url(https://i.ibb.co/cccYHV8H/child-Education.jpg)" }}
+        
         >
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="flex justify-center items-center h-full text-white px-6" data-aos="fade-up">
@@ -63,7 +64,7 @@ const Banner = () => {
         {/* Slide 3 */}
         <div
           className="relative w-full h-[60vh] sm:h-[80vh] lg:h-[100vh] bg-cover bg-center"
-          style={{ backgroundImage: "url(/src/assets/childEducation.jpg)" }}
+          style={{ backgroundImage: "url(https://i.ibb.co/Nd9NqWVX/generation.jpg)" }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="flex justify-center items-center h-full text-white px-6" data-aos="fade-up">
@@ -81,7 +82,7 @@ const Banner = () => {
         {/* Slide 4 */}
         <div
           className="relative w-full h-[60vh] sm:h-[80vh] lg:h-[100vh] bg-cover bg-center"
-          style={{ backgroundImage: "url(/src/assets/Flood2.jpg)" }}
+          style={{ backgroundImage: "url(https://i.ibb.co/GQk8PCjb/Flood2.jpg)" }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="flex justify-center items-center h-full text-white px-6" data-aos="fade-up">
@@ -101,3 +102,4 @@ const Banner = () => {
 };
 
 export default Banner;
+
