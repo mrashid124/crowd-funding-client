@@ -11,7 +11,7 @@ const UpdateCampaign = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:8080/details/${id}`)
+        fetch(`https://crowd-server-fawn.vercel.app/details/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setCampaign(data);
@@ -33,7 +33,7 @@ const UpdateCampaign = () => {
             user_name: user?.displayName,
         };
 
-        fetch(`http://localhost:8080/updateCampaign/${campaign._id}`, {
+        fetch(`https://crowd-server-fawn.vercel.app/updateCampaign/${campaign._id}`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(updatedCampaign),

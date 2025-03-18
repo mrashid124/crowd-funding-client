@@ -90,7 +90,7 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-blue-500" />
-              <span className="text-gray-700">123 Fundraising Lane, Crowdfun City</span>
+              <span className="text-gray-700">123 Fundraising Lane, Crowdfun City, BD.</span>
             </div>
           </div>
         </div>

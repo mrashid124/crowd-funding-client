@@ -13,7 +13,7 @@ const MyCampaign = () => {
     const [campaigns, setCampaigns] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:8080/campaigns/${email}`)
+        fetch(`https://crowd-server-fawn.vercel.app/campaigns/${email}`)
             .then((res) => res.json())
             .then((data) => {
                 setCampaigns(data);
@@ -34,7 +34,7 @@ const MyCampaign = () => {
             confirmButtonText: "Yes, delete it!",
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:8080/campaigns/${id}`, {
+                fetch(`https://crowd-server-fawn.vercel.app/campaigns/${id}`, {
                     method: "DELETE",
                 }).then(() => {
                     setCampaigns(campaigns.filter((camp) => camp._id !== id));

@@ -6,7 +6,7 @@ const RunningCaimpaign = () => {
     const [campaigns, setCampaigns] = useState([]);
 
     useEffect(() => {
-      fetch("http://localhost:8080/campaigns")
+      fetch("https://crowd-server-fawn.vercel.app/campaigns")
         .then((res) => res.json())
         .then((result) => {
           const today = new Date().toISOString().split("T")[0];

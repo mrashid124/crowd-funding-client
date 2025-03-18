@@ -30,7 +30,7 @@ const CampaignCard = ({ campaign, campaigns, setCampaigns }) => {
             icon: "success",
           });
   
-          fetch(`http://localhost:8080/campaigns/${_id}`, {
+          fetch(`https://crowd-server-fawn.vercel.app/campaigns/${_id}`, {
             method: "DELETE",
           })
             .then((res) => res.json())
@@ -75,5 +75,7 @@ const CampaignCard = ({ campaign, campaigns, setCampaigns }) => {
 };
 
 export default CampaignCard;
+
+
 
 

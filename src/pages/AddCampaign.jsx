@@ -37,7 +37,7 @@ const AddCampaign = () => {
     };
     // console.log(data);
     // data send to server
-    fetch('http://localhost:8080/campaigns', {
+    fetch('https://crowd-server-fawn.vercel.app/campaigns', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

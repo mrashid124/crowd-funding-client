@@ -10,7 +10,7 @@ const CampaignDetails = () => {
     const { user } = useContext(AuthContext);
 
     useEffect(() => {
-        fetch(`http://localhost:8080/details/${id}`)
+        fetch(`https://crowd-server-fawn.vercel.app/details/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setCampaign(data);
@@ -35,7 +35,7 @@ const CampaignDetails = () => {
             user_name: user.displayName,
             donationAmount,
         };
-        fetch(`http://localhost:8080/myDonate`, {
+        fetch(`https://crowd-server-fawn.vercel.app/myDonate`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

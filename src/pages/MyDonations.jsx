@@ -14,7 +14,7 @@ const MyDonations = () => {
   useEffect(() => {
     const fetchDonations = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/myDonate/${user?.email}`);
+        const response = await fetch(`https://crowd-server-fawn.vercel.app/myDonate/${user?.email}`);
         const data = await response.json();
         setDonations(data);
       } catch (error) {
@@ -54,4 +54,5 @@ const MyDonations = () => {
 };
 
 export default MyDonations;
+
 

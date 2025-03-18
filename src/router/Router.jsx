@@ -26,7 +26,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
-    loader: () => fetch('http://localhost:8080/campaigns'),
+    loader: () => fetch('https://crowd-server-fawn.vercel.app/campaigns'),
 
     children: [
       {
@@ -51,21 +51,21 @@ const router = createBrowserRouter([
         element: <PrivateRoute>
           <AddCampaign></AddCampaign>
         </PrivateRoute>,
-        loader: () => fetch('http://localhost:8080/campaigns'),
+        loader: () => fetch('https://crowd-server-fawn.vercel.app/campaigns'),
       },
       {
         path: "/allCampaigns",
         element: <AllCampaigns></AllCampaigns>,
-        loader: () => fetch('http://localhost:8080/campaigns'),
+        loader: () => fetch('https://crowd-server-fawn.vercel.app/campaigns'),
 
-        // loader: ({params})=> fetch(`http://localhost:8080/addCampaign/${params.id}`),
+        // loader: ({params})=> fetch(`https://crowd-server-fawn.vercel.app/addCampaign/${params.id}`),
       },
       {
         path: "/myCampaign/:email",
         element: <PrivateRoute>
           <MyCampaign></MyCampaign>
         </PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:8080/campaigns/:email${params.email}`),
+        loader: ({ params }) => fetch(`https://crowd-server-fawn.vercel.app/campaigns/:email${params.email}`),
       },
       {
         path: "/myDonation",
@@ -74,7 +74,7 @@ const router = createBrowserRouter([
         </PrivateRoute>,
         loader: () =>
           fetch(
-            `http://localhost:8080/myDonate/${app?.user?.email}`
+            `https://crowd-server-fawn.vercel.app/myDonate/${app?.user?.email}`
           ),
 
       },
@@ -83,12 +83,12 @@ const router = createBrowserRouter([
         element: <PrivateRoute>
           <CampaignDetails></CampaignDetails>
         </PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:8080/details/${params.id}`),
+        loader: ({ params }) => fetch(`https://crowd-server-fawn.vercel.app/details/${params.id}`),
       },
       {
         path: "/updateCampaign/:id",
         element: <UpdateCampaign></UpdateCampaign>,
-        loader: ({ params }) => fetch(`http://localhost:8080/details/${params.id}`),
+        loader: ({ params }) => fetch(`https://crowd-server-fawn.vercel.app/details/${params.id}`),
       },
       {
         path: "contactUs",
