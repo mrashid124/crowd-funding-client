@@ -26,10 +26,10 @@ const MyDonations = () => {
 
     fetchDonations();
   }, [user]);
-  console.log(donations);
+  // console.log(donations);
 
   const myDonations = donations.filter((donation) => donation.user_email === user?.email);
-  console.log(myDonations);
+  // console.log(myDonations);
 
    
 

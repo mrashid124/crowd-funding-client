@@ -75,7 +75,7 @@ const MyCampaign = () => {
                                     <td className={`p-3 text-center font-bold ${today > campaign.deadline ? "text-red-600" : "text-green-600"}`}>{today > campaign.deadline ? "Closed" : "Active"}</td>
                                     <td className="p-3 text-center">${campaign.minimum_donation}</td>
                                     <td className="p-3 flex justify-center space-x-2">
-                                        <Link to={`/campaignDetails/${campaign._id}`} className="p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"><FaDonate /></Link>
+                                        <Link to={`/details/${campaign._id}`} className="p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"><FaDonate /></Link>
                                         <Link to={`/updateCampaign/${campaign._id}`} className="p-2 bg-gray-500 text-white rounded-lg hover:bg-gray-700"><RxUpdate /></Link>
                                         <button onClick={() => handleDelete(campaign._id)} className="p-2 bg-red-500 text-white rounded-lg hover:bg-red-700"><MdDeleteForever
                                          /></button>

@@ -23,7 +23,13 @@ CrowdFunding is a user-friendly donation platform that enables users to create, 
 - React Hot Toast 
 - React Loader Spinner  
 - Swiper.js  
-- Animate.css  
+- Animate.css
+- lottie-react
+- aos
+- react-tooltip 
+- sweetalert2
+- react-simple-typewriter
+ 
 
 # Live Website
 https://crowd-server-fawn.vercel.app/                       

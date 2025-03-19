@@ -35,7 +35,7 @@ const AddCampaign = () => {
       user_email,
       user_name,
     };
-    // console.log(data);
+    // https://crowd-server-fawn.vercel.app(data);
     // data send to server
     fetch('https://crowd-server-fawn.vercel.app/campaigns', {
       method: 'POST',
@@ -46,7 +46,7 @@ const AddCampaign = () => {
     })
       .then(res => res.json)
       .then(data => {
-        // console.log(data);
+        // https://crowd-server-fawn.vercel.app(data);
         if(data.insertedId){
           Swal.fire({
               title: 'Success!',
